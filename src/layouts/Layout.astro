@@ -12,12 +12,17 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-    <script src="../../public/nutshell.js"> </script> 
+    <script src="/nutshell.js" is:inline> </script> 
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="prose">
-		<slot />
-	</body>
+  <body class="bg-base flex w-full justify-center">
+    <div class="prose prose-2xl prose-h1:text-white prose-h2:text-white prose-h3:text-white prose-p:text-white prose-a:text-white hover:prose-a:text-peach prose-invert w-1/2 justify-center mt-20 outline outline-peach p-12 min-h-full rounded-lg">
+		  <slot />
+    </div>
+  </body>
 </html>

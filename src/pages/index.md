@@ -4,11 +4,8 @@ title: Astro in brief
 author: Himanshu
 description: Find out what makes Astro awesome!
 ---
-## HELLO WORLD!
+# hexplainers
+explaining things   
+by hex4
 
-Some test content.
-
-### :Expand me!
-More test content.
-### :Another expandable!
-Even more test content!
+Hi! Welcome to Hexplainers
